@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet"  href="./styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header class="header"> 
+    <section class="header_contatos">
+    <div class="contatos">   
+        <i class="fa-solid fa-phone"></i><a class="link-contato" href="#"> (11) 4210-1997</p></a>
+        <i class="fa-solid fa-envelope"><i></i><a class="link-contato" href="#"></i> contato@notus.ind.br </P></a>
+    </div>     
+    <div class="icon_contatos">   
+        <a><i class="fa-brands fa-instagram"></i></a>
+        <a><i class="fa-brands fa-facebook"></i></a>
+        <a><i class="fa-brands fa-youtube"></i></a>
+        <a><i class="fa-brands fa-linkedin"></i></a>
+    </div> 
+    </section>    
+    </header>
+        <header class="header_">   
+                    <img class="apresentacao__image" src="./image/logo.png">
+                    <div id="divBusca">
+                        <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                        <i class="fa-solid fa-magnifying-glass" id="btnBusca" alt="Buscar"></i>
+                    </div>
+                    <span class="filter-menu">
+                    <i class="fa-solid fa-filter"></i>
+                    </span>
+                    <span class="hamburguer">
+                    <i class="fa-solid fa-bars"></i>
+                    </span>
+                   
+                    <div class="menu_lateral" >
+                        <a class="link_menu" href="#">Representantes</a>
+                        <a class="link_menu" href="#">contato</a>
+                        <a class="link_menu_lateral" href="#">Categorias</a>
+                        <span style="font-size:30px;cursor:pointer" onclick="abrirNav()"> <i class="fa-solid fa-cart-shopping cart-top"></i> </span>
+                    </div>        
+        </header>
+
+        <!-- MENU OCULTO PARA FAVORITOS E CARRINHO -->
+
+
+        <aside id="menuoculto" class="menuoculto">
+            <a href="javascript:void(0)" class="btnFechar" onclick="fecharNav()"> &times; </a>
+        
+            <div class="counter-list-favorites">
+                Aqui vão os favoritos
+            </div>
+            
+            
+        </aside>
+        
+   
+
+
+         <!-- MENU OCULTO PARA FAVORITOS E CARRINHO -->
+
+
+        <main>
+         <section class="container">
+                <div class="container-head-texto">
+                 <div> 
+                    <p class="info_head"> Como funciona o nosso catálogo?</p>
+                    <p class="info_head_text"> Veja o vídeo explicativo e economize tempo! </p>
+                </div>
+                <div class="head_video">  
+                    <iframe  width="300" height="190" src="https://www.youtube.com/embed/0fGUlVtAZ6o?si=IB2U2CRcKz8JpP0b"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+         </section>
+                
+                <h1 class="linha-completa"><strong>Linha </strong>completa Notus</h1> 
+                <h2>Acesse aqui todos os <strong>produtos Notus</strong></h2>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="card"><p class="titulo-linha">Radiador</p><img src="./image/radiador.png" class="prod-size"></div>
+                        <div class="card"><P class="titulo-linha">Intercooler</P><img src="./image/intercooler.png" class="prod-size"></div>
+                        <div class="card"><p class="titulo-linha">GMV</p><img src="./image/gmv.png" class="prod-size"></div>
+                        <div class="card"><p class="titulo-linha">Eletroventilador</p><img src="./image/eletroventilador-03.png" class="prod-size"></div>
+                        <div class="card"><p class="titulo-linha">condensador</p><img src="./image/condesador.png" class="prod-size"></div>
+                        <div class="card"><p class="titulo-linha">Evaporador</p><img src="./image/evaporador.png" class="prod-size"></div>
+                        <div class="card"><p class="titulo-linha">Radiador de ólero</p><img src="./image/radiadoroleo.png" class="prod-size"></div>
+                        <div class="card"><p class="titulo-linha">Radiador de aquecimento</p><img src="./image/radiadorquente.png" class="prod-size"></div>
+                        <div class="card"><p class="titulo-linha">Ventilador interno</p><img src="./image/ventiladorinterno.png" class="prod-size"></div>
+                    </div>
+                    <div class="button-container">
+                        <button class="button prev-button"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="button next-button"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+
+
+                <p class="titulo-lancamento"><strong>Lançamentos </strong>de produtos <i style="color:#134596;" class="fa-solid fa-rocket"></i></p> 
+                
+                <div class="carousel-container">
+                    <div class="carousel">
+                       
+                        <div class="card-two"><p class="titulo-lancamento-prod ">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i><i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod ">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod ">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod ">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod ">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>   
+                        <div class="card-two"><p class="titulo-lancamento-prod ">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>     
+                        <div class="card-two"><p class="titulo-lancamento-prod ">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod ">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="c"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod ">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>   
+                    </div>
+                    <div class="button-container">
+                        <button class="button prev-button"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="button next-button"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+                <a href="#" class="mais-produtos-link">
+                <p class="mais-produtos">Ver tudo</p></a>  
+                
+                 
+
+    
+           
+
+                <p class="titulo-lancamento"><strong>Radiadores </strong><i style="color:#134596;" class="fa-regular fa-snowflake"></i></p> 
+                
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                    </div>    
+                    <div class="button-container">
+                        <button class="button prev-button"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="button next-button"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+                <a href="#" class="mais-produtos-link">
+                <p class="mais-produtos">Ver tudo</p></a>  
+
+
+                <p class="titulo-lancamento"><strong>Eletroventilador </strong><i style="color:#134596;" class="fa-solid fa-fan"></i></p> 
+                
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0001</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart favoritebtn"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                    <div class="button-container">
+                        <button class="button prev-button"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="button next-button"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+                <a href="#" class="mais-produtos-link">
+                <p class="mais-produtos">Ver tudo</p></a>  
+
+
+
+                <p class="titulo-lancamento"><strong>GMV </strong><i style="color:#134596;" class="fa-solid fa-wind"></i></p> 
+                
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                    <div class="button-container">
+                        <button class="button prev-button"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="button next-button"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+                <a href="#" class="mais-produtos-link">
+                <p class="mais-produtos">Ver tudo</p></a>  
+
+
+                <p class="titulo-lancamento"><strong>Condensador </strong><i style="color:#134596;" class="fa-brands fa-hotjar"></i></p> 
+                
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                    <div class="button-container">
+                        <button class="button prev-button"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="button next-button"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+                <a href="#" class="mais-produtos-link">
+                <p class="mais-produtos">Ver tudo</p></a>  
+
+
+                <br><br><br><br><br>
+                <div class="container-mail">
+                    <div class="form_box">
+                        <p class="mail-cadastro">
+                            Assine nossa Newsletter e fique por dentro de todas as novidades!
+                        </p>
+                        <form action="get" class="form__change">
+                        <div class="campo_name">
+                                <label for="fname"></label><br>
+                                <input type="text" id="fname" name="fname" value="Nome"><br>
+                                <label for="lname"></label><br>
+                                <input type="text" id="lname" name="lname" value="e-mail"><br><br>
+                            <input type="submit" id="enviar" value="Enviar">
+                        </form>
+                    </div>    
+                </div>
+
+                
+
+            </main>
+            
+           
+        <footer class="rodape">
+            
+                <div class="footer-link">
+                    <ul>
+                        <h1 class="title-footer">Mapa do site</h1><br>
+                        <li class="list-link"><a href="#"  class="link-menu" > Sobre Notus </a></li>
+                        <li class="list-link"><a href="#"  class="link-menu" > Trabalhe conosco </a></li>
+                        <li class="list-link"><a href="#"  class="link-menu" > Garantia </a></li>
+                        <li class="list-link"><a href="#"  class="link-menu" > Representantes </a></li>
+                        <li class="list-link"><a href="#"  class="link-menu" > Blog </a></li>
+                        <li class="list-link"><a href="#"  class="link-menu" > Contato </a></li>
+                    </ul>
+                    <ul>
+                        <h1 class="title-footer">Lista de produtos</h1><br>
+                        <li class="list-link"> <a href="#"  class="link-menu"> Radiador </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"> Eletroventilador </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"> GMV </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"> Eletroventilador </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"> Condensador </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"> Evaporador </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"> Radiador de óleo </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"> Radiador de aquecimento </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"> Ventiladors internos </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"> Compressor A/C </a> </li>
+                    </ul>
+                    <ul>
+                        <h1 class="title-footer">Fale Conosco</h1><br>
+                        <li class="list-link"> <a href="#"  class="link-menu"><i class="fa-solid fa-phone"></i> 11 4210-1997 </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"><i class="fa-solid fa-phone"></i> 11 4210-1998 </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"><i class="fa-solid fa-phone"></i> 11 2413-6550 </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"><i class="fa-solid fa-envelope"></i> contato@notus.ind.br </a> </li>
+                        <br>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </ul>
+                </div>    
+
+            <div>
+                <p class="rodape-font"> Notus desenvolvimento de tecnologia @ 2024</p>
+            </div>
+        </footer>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>

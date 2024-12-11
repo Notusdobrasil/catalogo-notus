@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet"  href="./styles/style.css" />
+    <link rel="stylesheet"  href="./styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ficha de produtos</title>
+</head>
+<body>
+    <header class="header"> 
+        <section class="header_contatos">
+        <div class="contatos">   
+            <i class="fa-solid fa-phone"></i><a class="link-contato" href="#"> (11) 4210-1997</p></a>
+            <i class="fa-solid fa-envelope"><i></i><a class="link-contato" href="#"></i> contato@notus.ind.br </P></a>
+        </div>     
+        <div class="icon_contatos">   
+            <a><i class="fa-brands fa-instagram"></i></a>
+            <a><i class="fa-brands fa-facebook"></i></a>
+            <a><i class="fa-brands fa-youtube"></i></a>
+            <a><i class="fa-brands fa-linkedin"></i></a>
+        </div> 
+        </section>    
+        </header>
+            <header class="header_">   
+                        <img class="apresentacao__image" src="./image/logo.png">
+                        <div id="divBusca">
+                            <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                            <i class="fa-solid fa-magnifying-glass" id="btnBusca" alt="Buscar"></i>
+                        </div>
+                        <span class="filter-menu">
+                        <i class="fa-solid fa-filter"></i>
+                        </span>
+                        <span class="hamburguer">
+                        <i class="fa-solid fa-bars"></i>
+                        </span>
+                       
+                        <div class="menu_lateral" >
+                            <a class="link_menu" href="#">Representantes</a>
+                            <a class="link_menu" href="#">contato</a>
+                            <a class="link_menu_lateral" href="#">Categorias</a>
+                            <span style="font-size:30px;cursor:pointer" onclick="abrirNav()"> <i class="fa-solid fa-cart-shopping cart-top"></i> </span>
+                        </div>        
+            </header>
+                    
+        
+        <main>
+            <section class="container-infor-produtos">
+                <div class="gallery">
+                    <img src="./image/radiador.png" alt="Radiador notus" class="main-image">
+
+                    <div class="tumbnail-container">
+                        <img src="./image/radiador.png" alt="Radiador notus" class="thumbnail">
+                        <img src="./image/radiador.png" alt="Radiador notus" class="thumbnail">
+                        <img src="./image/radiador.png" alt="Radiador notus" class="thumbnail">
+                    </div>
+                </div>
+
+
+               
+            <div class="background-grid">       
+                 <div class="side-grid">
+                    <div class="grid-item background-card texto-titulo">RADIADOR DE ÁGUA - NT-7091.523</div>
+                    <div class="line-green"></div>
+                    <div class="line-yellow"></div>
+                    <div class="grid-item background-gray text-bold item1">Sobre o radiador</div>
+                    <div class="grid-item background-gray text-bold item2">Dimensões embalagem</div>
+                    <div class="grid-item text-bold2">Linha:</div>
+                    <div class="grid-item">Leve</div>
+                    <div class="grid-item text-bold2">Altura: </div>
+                    <div class="grid-item">500mm</div>
+                    <div class="grid-item text-bold2 text-bold2">Tecnologia:</div>
+                    <div class="grid-item">AM Aluminio MEC/Brasado</div>
+                    <div class="grid-item text-bold2">Comprimento:</div>
+                    <div class="grid-item">393mm</div>
+                    <div class="grid-item text-bold2">A/C:</div>
+                    <div class="grid-item">Ar-Condicionado</div>
+                    <div class="grid-item text-bold2">Largura:</div>
+                    <div class="grid-item">115mm</div>
+                    <div class="grid-item text-bold2">Transmissão:</div>
+                    <div class="grid-item">Mecânica/Manual</div>
+                    <div class="grid-item"> </div>
+                    <div class="grid-item"> </div>
+                    <div class="grid-item item3 background-gray text-bold">Produtos Relacionados</div>
+                    <div class="grid-item item4 background-gray text-bold">Dimensões Colméia</div>
+                    <div class="grid-item text-bold2">Eletroventilador:</div>
+                    <div class="grid-item">6</div>
+                    <div class="grid-item text-bold2">Altura:</div>
+                    <div class="grid-item">515mm</div>
+                    <div class="grid-item text-bold2">GMV</div>
+                    <div class="grid-item">10</div>
+                    <div class="grid-item text-bold2">Comprimento:</div>
+                    <div class="grid-item">378mm</div>
+                    <div class="grid-item text-bold2">Condensador:</div>
+                    <div class="grid-item">14</div>
+                    <div class="grid-item text-bold2">Largura</div>
+                    <div class="grid-item">318mm</div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>                  
+                    <div class="grid-item background-card-footer"></div>
+                   </div>
+                </div>
+
+                <!-- GRID RESPONSIVO PARA MOBILE -->
+                <div class="background-grid ">       
+                    <div class="side-grid-response">
+                       <div class="grid-item background-card texto-titulo">RADIADOR DE ÁGUA - NT-7091.523</div>
+                       <div><hr color="#FFD700"></div>
+                       <div><hr color="#009739"></div>
+                       <div class="grid-item background-gray text-bold item1">Sobre o radiador</div>
+                       <div><hr color="#fff"></div>
+                       <div class="grid-item background-gray text-bold2">Linha:</div>
+                       <div class="grid-item">Leve</div>
+                       <div class="grid-item background-gray text-bold2">Tecnologia:</div>
+                       <div class="grid-item">AM Aluminio MEC/Brasado</div>
+                       <div class="grid-item background-gray text-bold2">A/C:</div>
+                       <div class="grid-item">Ar-Condicionado</div>
+                       <div class="grid-item background-gray text-bold2">Transmissão:</div>
+                       <div class="grid-item">Mecânica/Manual</div>
+                       <div class="grid-item background-gray text-bold2">Altura: </div>
+                       <div class="grid-item">500mm</div>
+                       <div><hr color="#fff"><br></div>
+                       <div class="grid-item background-gray text-bold item2">Dimensões embalagem</div> 
+                       <div><hr color="#fff"></div>
+                       <div class="grid-item background-gray text-bold2">Altura:</div>
+                       <div class="grid-item">515mm</div>
+                       <div class="grid-item background-gray text-bold2">Comprimento:</div>
+                       <div class="grid-item">378mm</div>
+                       <div class="grid-item background-gray text-bold2">Largura</div>
+                       <div class="grid-item">318mm</div>
+                       <div><hr color="#fff"><br></div>
+                       <div class="grid-item item4 background-gray text-bold">Dimensões Colméia</div>
+                       <div><hr color="#fff"></div>
+                       <div class="grid-item background-gray text-bold2">Altura:</div>
+                       <div class="grid-item">115mm</div>
+                       <div class="grid-item background-gray text-bold2">cumprimento:</div>
+                       <div class="grid-item">115mm</div>                    
+                       <div class="grid-item background-gray text-bold2">Largura:</div>
+                       <div class="grid-item">393mm</div>
+                       <div><hr color="#fff"><br></div>
+                       <div class="grid-item item3 background-gray text-bold">Produtos Relacionados</div>
+                       <div><hr color="#fff"></div>
+                       <div class="grid-item background-gray text-bold2">Eletroventilador:</div>
+                       <div class="grid-item">EL-0000.0000</div>
+                       <div class="grid-item background-gray text-bold2">GMV</div>
+                       <div class="grid-item">GM-0000.0</div>
+
+                                
+                       <div class="grid-item background-card-footer"></div>
+                      </div>
+                   </div>
+            </section> 
+         <br><br><br><br>
+        </section> 
+
+        <h3 class="codigos-dos-produtos"> 
+            <strong> Códigos </strong> do Produto 
+        </h3> 
+        <div id="produtoTabela">
+   
+            <div id="produtoTabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Notus do Brasil</th>
+                            <th>OEM</th>
+                            <th>Valeo</th>
+                            <th>Visconde</th>
+                            <th>denso</th>
+                            <th>Behr</th>
+                            <th>Magneti Marelli</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="linha-cinza">Produto A</td>
+                            <td class="linha-cinza">R$ 10,00</td>
+                            <td class="linha-cinza">5</td>
+                            <td class="linha-cinza">Descrição do Produto A</td>
+                            <td class="linha-cinza">Descrição do Produto A</td>
+                            <td class="linha-cinza">Descrição do Produto A</td>
+                            <td class="linha-cinza">Descrição do Produto A</td>
+                        </tr>
+                        <tr>
+                            <td>Produto A</td>
+                            <td>R$ 10,00</td>
+                            <td>5</td>
+                            <td>Descrição do Produto A</td>
+                            <td>Descrição do Produto A</td>
+                            <td>Descrição do Produto A</td>
+                            <td>Descrição do Produto A</td>
+                        </tr>
+                        <tr>
+                            <td class="linha-cinza">Produto A</td>
+                            <td class="linha-cinza">R$ 10,00</td>
+                            <td class="linha-cinza">5</td>
+                            <td class="linha-cinza">Descrição do Produto A</td>
+                            <td class="linha-cinza">Descrição do Produto A</td>
+                            <td class="linha-cinza">Descrição do Produto A</td>
+                            <td class="linha-cinza">Descrição do Produto A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="aplicacao-do-produto"> 
+                <strong> Aplicações </strong> do Produto 
+            </h3> 
+   
+                <div id="produtoTabela">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Montadora</th>
+                                <th>Modelo</th>
+                                <th>Motor</th>
+                                <th>Ano</th>
+                                <th>A/C</th>
+                                <th>Transmissão</th>
+                                <th>Tecnologia</th>
+                                <th>OBS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="linha-cinza">Produto A</td>
+                                <td class="linha-cinza">R$ 10,00</td>
+                                <td class="linha-cinza">5</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                            </tr>
+                            <tr>
+                                <td>Produto A</td>
+                                <td>R$ 10,00</td>
+                                <td>5</td>
+                                <td>Descrição do Produto A</td>
+                                <td>Descrição do Produto A</td>
+                                <td>Descrição do Produto A</td>
+                                <td>Descrição do Produto A</td>
+                                <td>Descrição do Produto A</td>                                
+                            </tr>
+                            <tr>
+                                <td class="linha-cinza">Produto A</td>
+                                <td class="linha-cinza">R$ 10,00</td>
+                                <td class="linha-cinza">5</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="produtos-relacionados"> 
+                    <strong> Produtos </strong> relacionados
+                </h3> 
+
+                <div id="produtoTabela">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Prodduto</th>
+                                <th>Código</th>
+                                <th>QTD Pás</th>
+                                <th>Potência</th>
+                                <th>Sentido da rotação</th>
+                                <th>Diametro hélice</th>
+                                <th>Diametro motor</th>
+                                <th>OBS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="linha-cinza">Produto A</td>
+                                <td class="linha-cinza">R$ 10,00</td>
+                                <td class="linha-cinza">5</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                            </tr>
+                            <tr>
+                                <td>Produto A</td>
+                                <td>R$ 10,00</td>
+                                <td>5</td>
+                                <td>Descrição do Produto A</td>
+                                <td>Descrição do Produto A</td>
+                                <td>Descrição do Produto A</td>
+                                <td>Descrição do Produto A</td>
+                                <td>Descrição do Produto A</td>                                
+                            </tr>
+                            <tr>
+                                <td class="linha-cinza">Produto A</td>
+                                <td class="linha-cinza">R$ 10,00</td>
+                                <td class="linha-cinza">5</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                                <td class="linha-cinza">Descrição do Produto A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>    
+
+        
+        <p class="titulo-lancamento"><strong>Produtos </strong>relacioandos <i style="color:#134596;" class="fa-solid fa-plus"></i></p> 
+                
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="card-two"><p class="titulo-lancamento-prod ">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod ">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod ">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod ">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod ">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>   
+                        <div class="card-two"><p class="titulo-lancamento-prod ">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>     
+                        <div class="card-two"><p class="titulo-lancamento-prod ">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod ">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="card-two"><p class="titulo-lancamento-prod ">NT-0000.0000</p><img src="image/radiador.png" alt="Radiador notus"><p class="titulo-lancamento-descricao">Radiador Expandido<br> Fiat, Jeep, Peugeot Renegade, Compass, Toro...2015 a 2024</p>
+                        <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i></div>   
+                        </div>
+                    <div class="button-container">
+                        <button class="button prev-button"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="button next-button"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+                <a href="#" class="mais-produtos-link">
+                <p class="mais-produtos">Ver tudo</p></a>  
+                 
+
+    
+           
+
+               
+
+
+        
+
+
+        <br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+               
+                <div class="container-mail">
+                    <div class="form_box">
+                        <p class="mail-cadastro">
+                            Assine nossa Newsletter e fique por dentro de todas as novidades!
+                        </p>
+                        <form action="get" class="form__change">
+                        <div class="campo_name">
+                                <label for="fname"></label><br>
+                                <input type="text" id="fname" name="fname" value="Nome"><br>
+                                <label for="lname"></label><br>
+                                <input type="text" id="lname" name="lname" value="e-mail"><br><br>
+                            <input type="submit" id="enviar" value="Enviar">
+                        </form>
+                    </div>    
+                </div>
+
+                
+
+            </main>
+            
+
+        <footer class="rodape">
+            
+                <div class="footer-link">
+                    <ul>
+                        <h1 class="title-footer">Mapa do site</h1><br>
+                        <li class="list-link"><a href="#"  class="link-menu" > Sobre Notus </a></li>
+                        <li class="list-link"><a href="#"  class="link-menu" > Trabalhe conosco </a></li>
+                        <li class="list-link"><a href="#"  class="link-menu" > Garantia </a></li>
+                        <li class="list-link"><a href="#"  class="link-menu" > Representantes </a></li>
+                        <li class="list-link"><a href="#"  class="link-menu" > Blog </a></li>
+                        <li class="list-link"><a href="#"  class="link-menu" > Contato </a></li>
+                    </ul>
+                    <ul>
+                        <h1 class="title-footer">Lista de produtos</h1><br>
+                        <li class="list-link"> <a href="#"  class="link-menu"> Radiador </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"> Eletroventilador </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"> GMV </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"> Eletroventilador </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"> Condensador </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"> Evaporador </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"> Radiador de óleo </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"> Radiador de aquecimento </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"> Ventiladors internos </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"> Compressor A/C </a> </li>
+                    </ul>
+                    <ul>
+                        <h1 class="title-footer">Fale Conosco</h1><br>
+                        <li class="list-link"> <a href="#"  class="link-menu"><i class="fa-solid fa-phone"></i> 11 4210-1997 </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"><i class="fa-solid fa-phone"></i> 11 4210-1998 </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"><i class="fa-solid fa-phone"></i> 11 2413-6550 </a> </li>
+                        <li class="list-link"> <a href="#"  class="link-menu"><i class="fa-solid fa-envelope"></i> contato@notus.ind.br </a> </li>
+                        <br>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </ul>
+                </div>    
+
+            <div>
+                <p class="rodape-font"> Notus desenvolvimento de tecnologia @ 2024</p>
+            </div>
+        </footer>
+        <script src="./javascript/script.js"></script>
+</body>
+</html>

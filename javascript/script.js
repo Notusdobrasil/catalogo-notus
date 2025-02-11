@@ -72,18 +72,90 @@ favoriteIcons.forEach(icon => {
 
 
 
-//MENU LATERAL FECHA E ABRE
+//MENU LATERAL FAVORITOS E CARRINHO
 function abrirNav(){
-    document.getElementById("menuoculto").style.width="250px";
-    document.getElementById("principal").style.marginleft="250px";
+    document.getElementById("menuoculto").style.width="400px";
+    document.getElementById("principal").style.marginleft="400px";
 }
 function fecharNav(){
     document.getElementById("menuoculto").style.width='0';
     document.getElementById("principal").style.marginLeft="0";
 }
 
+//MENU LATERAL FAVORITOS E CARRINHO
 
 
 
+// MENU SUPERIOR FILTRO ABRE A FECHA
+
+function abrirNav2() {
+    document.getElementById("menuoculto2").style.top = "0"; 
+}
+
+function fecharNav2() {
+    document.getElementById("menuoculto2").style.top = "-100%"; 
+}
+
+// MENU SUPERIOR FILTRO ABRE A FECHA
 
 
+// SUB MENU PARTE SUPERIOR CATEGORIAS 
+function toggleMenu(event) {
+    event.preventDefault(); // Evita a navegação do link
+
+    let target = event.target;
+
+    // Se o clique foi no <i>, pega o elemento pai (<a>)
+    if (target.tagName === "I") {
+        target = target.parentElement;
+    }
+
+    let submenu = target.nextElementSibling; // Pega o submenu associado
+
+    if (submenu) {
+        // Alterna a visibilidade do submenu
+        submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+    }
+}
+
+// Evento para fechar o menu ao clicar fora dele
+document.addEventListener("click", function (event) {
+    let dropdown = document.querySelector(".dropdown");
+    let submenu = document.querySelector(".submenu");
+
+    // Se o clique não for dentro do dropdown, fecha o submenu
+    if (!dropdown.contains(event.target)) {
+        submenu.style.display = "none";
+    }
+});
+
+// SUB MENU PARTE SUPERIOR CATEGORIAS 
+
+// BUSCA MEIO DA PÁGINA 
+
+function toggleSearchBar() {
+    let searchBar = document.getElementById("searchBar");
+    if (searchBar.style.display === "none" || searchBar.style.display === "") {
+        searchBar.style.display = "block"; // Mostra a barra de pesquisa
+    } else {
+        searchBar.style.display = "none"; // Esconde a barra de pesquisa
+    }
+}
+
+// FILTRO DENTRO DA BARRA DE BUSCA 
+
+function filtroSearchbaricon() {
+    let filtroSearchbar = document.getElementById("filtroSearchbaricon");
+
+    if (!filtroSearchbar.classList.contains("active")) {
+        filtroSearchbar.style.display = "block"; // Exibe o elemento antes da animação
+        setTimeout(() => {
+            filtroSearchbar.classList.add("active"); // Aplica a animação de entrada
+        }, 200); // Pequeno delay para garantir que o CSS reconheça a mudança
+    } else {
+        filtroSearchbar.classList.remove("active"); // Inicia a animação de saída
+        setTimeout(() => {
+            filtroSearchbar.style.display = "none"; // Esconde após a transição
+        }, 500); // Tempo correspondente à animação
+    }
+}
